@@ -1,0 +1,115 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(180deg, #23252a, #30343f);
+    min-height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(238, 255, 0);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .nav-links li a:hover {
+    color: cyan;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 80px);
+    position: relative;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h1 span {
+    color: cyan;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .read-more-btn {
+    padding: 10px 20px;
+    background: cyan;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  
+  /* Arrows */
+  .arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+  }
+  
+  .arrow {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #aaa;
+  }
+  
+  .arrow:hover {
+    color: cyan;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+  }
+  

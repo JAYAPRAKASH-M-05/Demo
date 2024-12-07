@@ -1,0 +1,136 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #30343f;
+    color: #fff;
+    padding: 15px 50px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(238, 255, 0);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .nav-links li a:hover, .nav-links li a.active {
+    color: cyan;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 50px;
+    background: #fff;
+  }
+  
+  .about-header h2 {
+    font-size: 1rem;
+    color: orange;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .about-header hr {
+    width: 50px;
+    height: 2px;
+    background: cyan;
+    border: none;
+    margin: 10px 0;
+  }
+  
+  .about-header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .content-left, .content-right {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .content-left p, .content-right p {
+    margin-bottom: 15px;
+  }
+  
+  .content-left ul {
+    list-style: none;
+  }
+  
+  .content-left ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: orange;
+  }
+  
+  .content-left ul li:before {
+    content: "✔️ ";
+    color: orange;
+  }
+  
+  .read-more-btn {
+    padding: 10px 20px;
+    background: orange;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .read-more-btn:hover {
+    background: #f08900;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+  
+    .navbar {
+      padding: 15px;
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      gap: 15px;
+    }
+  }
+  
